@@ -326,6 +326,13 @@ html {
 
 @media screen and (max-width:1028px) {
     
+    .heading {
+        width: 100%;
+        margin:auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 
     .btn {
         margin-top: 0;

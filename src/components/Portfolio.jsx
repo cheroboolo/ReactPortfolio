@@ -45,11 +45,11 @@ function Portfolio() {
             <div>
             <Container>
                 <Row>
-                    {notes.map((noteItem, index) => (
+                    {notes.map(noteItem => (
                         
                         <Col className="mobile-card" md={4}>
                         <motion.div variants={cardVariant} whileHover="hover" initial={{x:"-100vw"}} animate={{x:0}} >
-                        {!expand && index<3 && <Cards 
+                        {!expand && noteItem.key<4 && <Cards 
                                 key={noteItem.key}
                                 title={noteItem.title}
                                 content={noteItem.content}
@@ -63,7 +63,6 @@ function Portfolio() {
                             /> }
                         </motion.div>
                         </Col>
-                        
                     ))}
                 </Row>
                 
